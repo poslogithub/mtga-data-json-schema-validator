@@ -11,3 +11,6 @@
 * schema_dir
   * .\json-schema
   
+## Known issues
+
+* Cannot validate `data_altPrintings_*.mtga` because it has invalid comments like `/*missing en-US translation for LocID: 2999*/`
