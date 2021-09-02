@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataAltArtCreditsSchema",
+    "description": "JSON schema for data_altArtCredits_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "CardName",
+            "ArtId",
+            "ArtistCredit"
+        ],
+        "properties": {
+            "CardName": {
+                "type": "string"
+            },
+            "ArtId": {
+                "type": "string"
+            },
+            "ArtistCredit": {
+                "type": "string"
+            }
+        }
+    }
+}

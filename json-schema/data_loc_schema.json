@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataLocSchema",
+    "description": "JSON schema for data_loc_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "langkey",
+            "isoCode",
+            "keys"
+        ],
+        "properties": {
+            "langkey": {
+                "type": "string"
+            },
+            "isoCode": {
+                "type": "string"
+            },
+            "keys": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "id",
+                        "text"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

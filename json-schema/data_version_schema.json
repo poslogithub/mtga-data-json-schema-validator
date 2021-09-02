@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataVersionSchema",
+    "description": "JSON schema for data_version_xxxx.mtga",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "DataVersion",
+        "Build"
+    ],
+    "properties": {
+        "DataVersion": {
+            "type": "string"
+        },
+        "Build": {
+            "type": "string"
+        }
+    }
+}

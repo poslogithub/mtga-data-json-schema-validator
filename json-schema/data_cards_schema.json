@@ -1,0 +1,215 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataCardsSchema",
+    "description": "JSON schema for data_Cards_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "grpid",
+            "titleId",
+            "artId",
+            "flavorId",
+            "collectorNumber",
+            "set",
+            "cardTypeTextId"
+        ],
+        "properties": {
+            "grpid": {
+                "type": "integer"
+            },
+            "titleId": {
+                "type": "integer"
+            },
+            "artId": {
+                "type": "integer"
+            },
+            "isToken": {
+                "type": "boolean"
+            },
+            "isSecondaryCard": {
+                "type": "boolean"
+            },
+            "artSize": {
+                "type": "integer"
+            },
+            "power": {
+                "type": "string"
+            },
+            "toughness": {
+                "type": "string"
+            },
+            "flavorId": {
+                "type": "integer"
+            },
+            "collectorNumber": {
+                "type": "string"
+            },
+            "collectorMax": {
+                "type": "string"
+            },
+            "altDeckLimit": {
+                "type": "integer"
+            },
+            "cmc": {
+                "type": "integer"
+            },
+            "rarity": {
+                "type": "integer"
+            },
+            "artistCredit": {
+                "type": "string"
+            },
+            "set": {
+                "type": "string"
+            },
+            "usesSideboard": {
+                "type": "boolean"
+            },
+            "linkedFaceType": {
+                "type": "integer"
+            },
+            "types": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "subtypes": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "supertypes": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "cardTypeTextId": {
+                "type": "integer"
+            },
+            "subtypeTextId": {
+                "type": "integer"
+            },
+            "colors": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "indicator": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "frameColors": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "frameDetails": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "colorIdentity": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "linkedFaces": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "castingcost": {
+                "type": "string"
+            },
+            "knownSupportedStyles": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "extraFrameDetails": {
+                "type": "object",
+                "properties": {
+                    "n": {
+                        "type": "string"
+                    }
+                }
+            },
+            "DigitalReleaseSet": {
+                "type": "string"
+            },
+            "abilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "Id",
+                        "TextId"
+                    ],
+                    "properties": {
+                        "Id": {
+                            "type": "integer"
+                        },
+                        "TextId": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "hiddenAbilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "Id",
+                        "TextId"
+                    ],
+                    "properties": {
+                        "Id": {
+                            "type": "integer"
+                        },
+                        "TextId": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "abilityIdToLinkedTokenGrpId": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "abilityIdToLinkedConjurationId": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "linkedAbilityTemplateCardGrpIds": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "data_altFlavorTexts",
+    "description": "JSON schema for data_altFlavorTexts_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "SetCode",
+            "AltFlavorTexts"
+        ],
+        "properties": {
+            "SetCode": {
+                "type": "string"
+            },
+            "AltFlavorTexts": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "AlternateFlavorTextID",
+                        "LocKey"
+                    ],
+                    "properties" :{
+                        "AlternateFlavorTextID": {
+                            "type": "string"
+                        },
+                        "LocKey": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+       }
+    }
+}

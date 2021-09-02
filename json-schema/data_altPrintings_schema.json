@@ -1,0 +1,66 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataAltPrintingsSchema",
+    "description": "JSON schema for data_altPrintings_xxxx.mtga",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                " ": {
+                    "type": "integer"
+                },
+                "  ": {
+                    "type": "integer"
+                },
+                "   ": {
+                    "type": "integer"
+                },
+                "AA": {
+                    "type": "integer"
+                },
+                "DA_AA": {
+                    "type": "integer"
+                },
+                "DA_AA1": {
+                    "type": "integer"
+                },
+                "DA_AA2": {
+                    "type": "integer"
+                },
+                "DA_AA3": {
+                    "type": "integer"
+                },
+                "DA_AA4": {
+                    "type": "integer"
+                },
+                "FF": {
+                    "type": "integer"
+                },
+                "JP": {
+                    "type": "integer"
+                },
+                "MOD": {
+                    "type": "integer"
+                },
+                "MP": {
+                    "type": "integer"
+                },
+                "PH": {
+                    "type": "integer"
+                },
+                "RLB": {
+                    "type": "integer"
+                },
+                "SH": {
+                    "type": "integer"
+                },
+                "TOHO": {
+                    "type": "integer"
+                }
+            }
+    
+        }
+    }
+}

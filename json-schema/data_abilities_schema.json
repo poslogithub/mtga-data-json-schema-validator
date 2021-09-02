@@ -1,0 +1,92 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataAbbilitySchema",
+    "description": "JSON schema for data_abbility_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "id",
+            "text",
+            "category"
+        ],
+        "properties" :{
+            "id": {
+                "type": "integer"
+            },
+            "text": {
+                "type": "integer"
+            },
+            "baseId": {
+                "type": "integer"
+            },
+            "baseIdNumeral": {
+                "type": "integer"
+            },
+            "category": {
+                "type": "integer"
+            },
+            "subCategory": {
+                "type": "integer"
+            },
+            "abilityWord": {
+                "type": "integer"
+            },
+            "isIntrinsicAbility": {
+                "type": "boolean"
+            },
+            "linkedHiddenAbilities": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "miscellaneousTerm": {
+                "type": "integer"
+            },
+            "numericAid": {
+                "type": "integer"
+            },
+            "relevantZones": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "modalAbilityChildren": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "requiresConfirmation": {
+                "type": "integer"
+            },
+            "referencedKeywordTypes": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "referencedKeywords": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "paymentTypes": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
+            },
+            "manaCost": {
+                "type": "string"
+            },
+            "notFullyParsed": {
+                "type": "boolean"
+            }
+       }
+    }
+}
