@@ -22,6 +22,9 @@
             "titleId": {
                 "type": "integer"
             },
+            "altTitleId": {
+                "type": "integer"
+            },
             "artId": {
                 "type": "integer"
             },

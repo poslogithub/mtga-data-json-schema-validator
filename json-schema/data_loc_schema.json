@@ -31,6 +31,9 @@
                         "id": {
                             "type": "integer"
                         },
+                        "raw": {
+                            "type": "string"
+                        },
                         "text": {
                             "type": "string"
                         }
