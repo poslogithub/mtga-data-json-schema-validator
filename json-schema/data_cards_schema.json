@@ -115,6 +115,9 @@
                     "type": "integer"
                 }
             },
+            "rawFrameDetails": {
+                "type": "string"
+            },
             "frameDetails": {
                 "type": "array",
                 "items": {
@@ -150,8 +153,17 @@
                     }
                 }
             },
+            "IsRebalanced": {
+                "type": "boolean"
+            },
+            "RebalancedCardLink": {
+                "type": "integer"
+            },
             "DigitalReleaseSet": {
                 "type": "string"
+            },
+            "IsDigitalOnly": {
+                "type": "boolean"
             },
             "abilities": {
                 "type": "array",
@@ -199,11 +211,22 @@
                     }
                 }
             },
-            "abilityIdToLinkedConjurationId": {
+            "abilityIdToLinkedConjurations": {
                 "type": "object",
                 "properties": {
-                    "id": {
-                        "type": "integer"
+                    "abilityId": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ConjurationType": {
+                                    "type": "integer"
+                                },
+                                "CardGrpId": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
                     }
                 }
             },
@@ -211,6 +234,20 @@
                 "type": "array",
                 "items": {
                     "type": "integer"
+                }
+            },
+            "TextChangeData": {
+                "type": "object",
+                "properties": {
+                    "ChangedAbilityId": {
+                        "type": "integer"
+                    },
+                    "ChangeSourceId": {
+                        "type": "integer"
+                    },
+                    "OriginalAbilityId": {
+                        "type": "integer"
+                    }
                 }
             }
         }
