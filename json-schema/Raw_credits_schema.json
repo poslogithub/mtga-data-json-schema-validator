@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dataVersionSchema",
+    "description": "JSON schema for data_version_xxxx.mtga",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "HeadingLocKey"
+        ],
+        "properties": {
+            "HeadingLocKey": {
+                "type": "string"
+            },
+            "HeaderTextSize": {
+                "type": "integer"
+            },
+            "Text": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "Roles": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "TitleLocKey",
+                        "Text"
+                    ],
+                    "properties": {
+                        "TitleLocKey": {
+                            "type": "string"
+                        },
+                        "Text": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

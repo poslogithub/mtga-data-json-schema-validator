@@ -55,10 +55,7 @@
                 }
             },
             "modalAbilityChildren": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "requiresConfirmation": {
                 "type": "integer"
@@ -75,17 +72,23 @@
                     "type": "integer"
                 }
             },
-            "paymentTypes": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
-            },
             "manaCost": {
                 "type": "string"
             },
+            "loyaltyCost": {
+                "type": "string"
+            },
+            "paymentType": {
+                "type": "integer"
+            },
             "notFullyParsed": {
                 "type": "boolean"
+            },
+            "linkedByHiddenAbilities": {
+                "type": "string"
+            },
+            "modalAbilityParents": {
+                "type": "string"
             }
        }
     }

@@ -171,8 +171,7 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                        "Id",
-                        "TextId"
+                        "Id"
                     ],
                     "properties": {
                         "Id": {
@@ -190,8 +189,7 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                        "Id",
-                        "TextId"
+                        "Id"
                     ],
                     "properties": {
                         "Id": {
