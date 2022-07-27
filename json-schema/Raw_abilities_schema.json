@@ -37,10 +37,7 @@
                 "type": "boolean"
             },
             "linkedHiddenAbilities": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "miscellaneousTerm": {
                 "type": "integer"
@@ -49,10 +46,7 @@
                 "type": "integer"
             },
             "relevantZones": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "modalAbilityChildren": {
                 "type": "string"
@@ -61,16 +55,10 @@
                 "type": "integer"
             },
             "referencedKeywordTypes": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "referencedKeywords": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "manaCost": {
                 "type": "string"
