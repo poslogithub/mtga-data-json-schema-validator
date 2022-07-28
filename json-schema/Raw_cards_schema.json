@@ -55,9 +55,6 @@
             "altDeckLimit": {
                 "type": "integer"
             },
-            "cmc": {
-                "type": "integer"
-            },
             "rarity": {
                 "type": "integer"
             },
@@ -74,22 +71,13 @@
                 "type": "integer"
             },
             "types": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "subtypes": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "supertypes": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "cardTypeTextId": {
                 "type": "integer"
@@ -98,60 +86,37 @@
                 "type": "integer"
             },
             "colors": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "indicator": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "frameColors": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "rawFrameDetails": {
                 "type": "string"
             },
             "frameDetails": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
+                "type": "string"
+            },
+            "watermark": {
+                "type": "string"
             },
             "colorIdentity": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "linkedFaces": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "castingcost": {
                 "type": "string"
             },
             "knownSupportedStyles": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
+                "type": "string"
             },
             "extraFrameDetails": {
-                "type": "object",
-                "properties": {
-                    "n": {
-                        "type": "string"
-                    }
-                }
+                "type": "string"
             },
             "IsRebalanced": {
                 "type": "boolean"
@@ -166,87 +131,22 @@
                 "type": "boolean"
             },
             "abilities": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                        "Id"
-                    ],
-                    "properties": {
-                        "Id": {
-                            "type": "integer"
-                        },
-                        "TextId": {
-                            "type": "integer"
-                        }
-                    }
-                }
+                "type": "string"
             },
             "hiddenAbilities": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                        "Id"
-                    ],
-                    "properties": {
-                        "Id": {
-                            "type": "integer"
-                        },
-                        "TextId": {
-                            "type": "integer"
-                        }
-                    }
-                }
+                "type": "string"
             },
             "abilityIdToLinkedTokenGrpId": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    }
-                }
+                "type": "string"
             },
             "abilityIdToLinkedConjurations": {
-                "type": "object",
-                "properties": {
-                    "abilityId": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "ConjurationType": {
-                                    "type": "integer"
-                                },
-                                "CardGrpId": {
-                                    "type": "integer"
-                                }
-                            }
-                        }
-                    }
-                }
+                "type": "string"
             },
             "linkedAbilityTemplateCardGrpIds": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
+                "type": "string"
             },
             "TextChangeData": {
-                "type": "object",
-                "properties": {
-                    "ChangedAbilityId": {
-                        "type": "integer"
-                    },
-                    "ChangeSourceId": {
-                        "type": "integer"
-                    },
-                    "OriginalAbilityId": {
-                        "type": "integer"
-                    }
-                }
+                "type": "string"
             }
         }
     }
